@@ -5,6 +5,7 @@ const ratingsContainer = document.querySelector('.rating-container')
 const panel = document.querySelector('#panel')
 const sendBtn = document.querySelector('#send')
 
+//by defualt status
 let selectRatings = 'Satisfied'
 
 // add event listener on rating container
