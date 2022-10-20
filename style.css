@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #fef9f2;
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----------------for panel container--------------- */
+.panel-container{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.panel-container strong{
+    line-height: 20px;
+}
+
+/* --------------------for rating container----------------- */
+
+.rating-container{
+    display:flex;
+    margin:20px 0;
+}
+
+/* --------------------inside rating container----------------  */
+
+.rating{
+    flex:1;
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active{
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ----------for image-------------- */
+.rating img{
+    width: 40px;
+}
+
+/* -------------for small text--------------- */
+.rating small{
+    color: #555;
+    margin: 10px 0 0;
+    display: inline-block;
+}
+
+/*----------------- for hover and active effect--------------------- */
+
+.rating:hover small,
+.rating.active small{
+    color:#111;
+}
+
+/* -------------------for send button------------------ */
+.btn{
+    background-color: #302d2b;
+    color:#fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+transform: scale(0.98);
+}
+
+/* --------------for heart icon------------- */
+.fa-heart{
+    color:red;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
